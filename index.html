@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Survey Form</title>
+        <title>Wing Form</title>
     </head>
     <body>
         <div id="introduction-text">
@@ -10,8 +10,8 @@
             <p><em>If the form is not submitted by 11:30am your lunch order will <strong>NOT</strong> be placed.</em></p>
         </div>
         <div>
-            <form action="">
-                <fieldset>
+            <form action="/success.html" method="GET">
+                <fieldset id="personal-information">
                     <legend>Personal information:</legend>
                     First Name: <br />
                     <input type="text" id="firstname" name="firstname"><br>
@@ -22,16 +22,60 @@
                     Cell: <br>
                     <input type="text" id="cellnum" name="cellnum">
                 </fieldset>
-                <fieldset>
+                <fieldset id="wing-order">
                     <legend>Wing Order:</legend>
                     Wing Type: <br>
                     <input type="radio" name="wingtype" value="boneless" checked>Boneless
                     <input type="radio" name="wingtype" value="traditional" >Traditional
                     <legend>Quantity:</legend>
-                    <input type="radio" name="quantity" value="small" checked>8 Piece
-                    <input type="radio" name="quantity" value="medium" >12 Piece
-                    <input type="radio" name="quantity" value="large" >16 Piece
+                    <input type="radio" name="quantity8" value="small" checked>8 Piece
+                    <input type="radio" name="quantity12" value="medium" >12 Piece
+                    <input type="radio" name="quantity16" value="large" >16 Piece
+                    <legend>Sauce:</legend>
+                    <input type="checkbox" name="sauce1" value="garlic">Garlic Parmesan
+                    <input type="checkbox" name="sauce2" value="bbq">BBQ
+                    <input type="checkbox" name="sauce3" value="mild">Mild
+                    <input type="checkbox" name="sauce4" value="buffalo">Buffalo
+                    <input type="checkbox" name="sauce5" value="mango">Mango Habanero
+                    <input type="checkbox" name="sauce6" value="atomic">Atomic
+                    <legend>Dipping Sauce:</legend>
+                    <input type="radio" name="dipping" value="ranch">Ranch
+                    <input type="radio" name="dipping" value="garlic">Garlic Butter
+                    <input type="radio" name="dipping" value="blue">Blue Cheese
+                    <input type="radio" name="dipping" value="none">None
                 </fieldset>
+                <fieldset id="drink">
+                    <legend>Drinks:</legend>
+                    Type: <br>
+                    <input type="radio" name="drinks" value="coke" checked>Coke
+                    <input type="radio" name="drinks" value="diet" >Diet Coke
+                    <input type="radio" name="drinks" value="sprite" >Sprite
+                    <input type="radio" name="drinks" value="Fanta" >Fanta
+                    <input type="radio" name="drinks" value="drpepper" >Dr.Pepper
+                    <input type="radio" name="drinks" value="none" >No Drink
+                    <legend>Size:</legend>
+                    <input type="radio" name="size" value="small">Small(10 oz)
+                    <input type="radio" name="size" value="medium">Medium(14 oz)
+                    <input type="radio" name="size" value="large">Large(20 oz)
+                </fieldset>
+                <fieldset>
+                    <legend>Sides:</legend>
+                    Fries: <br>
+                    <input type="radio" name="sizef" value="small" checked>Small
+                    <input type="radio" name="sizef" value="medium">Medium   
+                    <input type="radio" name="sizef" value="large">Large
+                    <input type="radio" name="sizef" value="none">None
+                    <legend>Other:</legend>
+                    <input type="radio" name="other" value="pickle">Pickle
+                    <input type="radio" name="other" value="chips">Chips
+                    <input type="radio" name="other" value="none">None
+                </fieldset>
+                <fieldset>
+                    <legend>Comments:</legend>
+                    <label for="msg">If you have any special requests please enter them below:</label> <br>
+                    <textarea name="user_message" id="msg" placeholder="Enter text here" cols="30" rows="10"></textarea>
+                </fieldset>
+                <input type="submit">
             </form>
         </div>
 
