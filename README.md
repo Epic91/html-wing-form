@@ -1,0 +1,2 @@
+# Wing Form
+This form is written is pure HTML, it is made to showcase a lunch form using different input types such as radio buttons, checkboxes and regular text. This was made as practice following  **Kenny Wood's** *Confident Web Design* as reference.
