@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <div id="introduction-text">
+            <h1>Wing Form</h1>
+            <p>Fill out this form and submit it by <strong>11:30am</strong></p>
+            <p><em>If the form is not submitted by 11:30am your lunch order will <strong>NOT</strong> be placed.</em></p>
+        </div>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Personal information:</legend>
+                    First Name: <br />
+                    <input type="text" id="firstname" name="firstname"><br>
+                    Last Name: <br>
+                    <input type="text" id="lastname" name="lastname"><br>
+                    Department: <br>
+                    <input type="text" id="department" name="department"><br>
+                    Cell: <br>
+                    <input type="text" id="cellnum" name="cellnum">
+                </fieldset>
+                <fieldset>
+                    <legend>Wing Order:</legend>
+                    Wing Type: <br>
+                    <input type="radio" name="wingtype" value="boneless" checked>Boneless
+                    <input type="radio" name="wingtype" value="traditional" >Traditional
+                    <legend>Quantity:</legend>
+                    <input type="radio" name="quantity" value="small" checked>8 Piece
+                    <input type="radio" name="quantity" value="medium" >12 Piece
+                    <input type="radio" name="quantity" value="large" >16 Piece
+                </fieldset>
+            </form>
+        </div>
+
+    </body>
+</html>
